@@ -43,7 +43,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     document.getElementById('current-0').textContent = '0';
     document.getElementById('current-1').textContent = '0';
     document.getElementById('current-' + activePlayer).textContent = '0';
-    if (score[activePlayer] >= 20) {
+    if (score[activePlayer] >= 100) {
         document.getElementById('name-' + activePlayer).textContent = 'WINNER!';
         
         document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
